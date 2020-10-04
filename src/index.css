@@ -1,13 +1,69 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #eee;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App .container {
+    background-color: #e1e1e1;
+    padding: 20px;
+}
+
+.App img {
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.App .container h2 {
+    color: #666;
+    font-size: 45px;
+    text-transform: capitalize;
+    margin: 15px;
+}
+
+@media (max-width: 991px) {
+    .App .container h2 {
+        font-size: 30px
+    }
+}
+
+.App .container input {
+    margin-top: 10px;
+}
+
+.App .container button:first-of-type {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.App .container .input2 {
+    display: block !important;
+}
+
+.App .container ul li {
+    margin-bottom: 5px;
+    overflow: hidden;
+    background-color: #555;
+    color: #fff;
+}
+
+.App .container ul li p {
+    display: inline-block;
+}
+
+.App .container ul li p:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.App .container ul li p:last-child {
+    margin-right: 0;
+    float: right;
+    font-size: 20px;
+    border-radius: 50%;
+    font-weight: 400;
+    padding-bottom: 3px;
+    padding-top: 1px;
+}
+
+.react-datepicker-wrapper {
+    display: block;
 }
